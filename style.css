@@ -1,0 +1,136 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-shadow: 0 0 .5rem rgb(129, 61, 156);
+  }
+
+  header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -180px;
+    color: rgb(111, 47, 126);
+    font-family: 'Pacifico', cursive;
+  }
+
+  .title {
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  .keys {
+    min-height: 60vh;
+    align-items: end;
+    justify-content: center;
+  }
+
+ 
+  
+  .key {
+    border: .4rem solid #541183;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(131, 41, 161, 0.253);
+    text-shadow: 0 0 .5rem rgb(171, 121, 199);
+    cursor: pointer;
+  }
+
+  .playing {
+    transform: scale(1.1);
+    border-color: #992691;
+    box-shadow: 0 0 1rem #ffffff;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase ;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }
+
+
+
+
+  @media screen and (max-width: 350px) {
+    .keys {
+      display: grid;
+      grid-gap: 15px;
+   
+      grid-template: 90px 90px 90px / auto auto auto;
+      margin-top: 200px;
+      min-height: auto;
+  }
+ 
+  .key {
+   
+    width: 35px;
+    height: 40px;
+  }
+  kbd {
+    font-size: 1.2rem;
+  }
+  .sound{
+    font-size: 0.4rem;
+  }
+
+  }
+
+  @media only screen and (min-width: 375px) {
+    .keys {
+      display: grid;
+      grid-gap: 20px;
+      grid-template: 90px 90px 90px / auto auto auto;
+      margin-top: 250px;
+      min-height: auto;
+  }
+ 
+  .key {
+   
+    width: 40px;
+    height: 40px;
+  }
+  kbd {
+    font-size: 1.5rem;
+  }
+  .sound{
+    font-size: 0.4rem;
+  }
+
+
+  }
+
+  @media screen and (min-width: 768px){
+    .keys {
+      display: grid;
+      grid-gap: 50px;
+      
+      grid-template: 90px 90px 90px / auto auto auto;
+      margin-top: 250px;
+      min-height: auto;
+  }
+ 
+  .key {
+   
+    width: 90px;
+    height: 90px;
+  }
+  kbd {
+    font-size: 3rem;
+  }
+  .sound{
+    font-size: 1rem;
+  }
+
+    
+   }
